@@ -1,0 +1,74 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <icon menu></icon>
+  </button>
+  <ion-title>Questions</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+  <ion-card>
+    <ion-item>
+      <h1>{{owner}}</h1>
+      <p>Member Since: November 5, 2013</p>
+    </ion-item>
+
+    <img src="{{image}}">
+
+    <ion-card-content>
+      <p>
+        {{details}}
+      </p>
+    </ion-card-content>
+
+    <ion-item>
+      <button primary clear item-left>
+        <icon thumbs-up></icon>
+        <div>12 Likes</div>
+      </button>
+      <button primary clear item-left>
+        <icon text></icon>
+        <div>4 Comments</div>
+      </button>
+      <ion-note item-right>
+        11h ago
+      </ion-note>
+    </ion-item>
+
+  </ion-card>
+
+  <!--<div class="card">-->
+    <!--<p>{{title}}</p>-->
+    <!--<p>{{details}}<p>-->
+    <!--<p>{{image}}</p>-->
+    <!--&lt;!&ndash;<div class="item item-avatar">&ndash;&gt;-->
+      <!--&lt;!&ndash;<img src="{{image}}">&ndash;&gt;-->
+      <!--&lt;!&ndash;<h2>{{owner}}</h2>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="item item-body">&ndash;&gt;-->
+      <!--&lt;!&ndash;<p>&ndash;&gt;-->
+        <!--&lt;!&ndash;{{details}}&ndash;&gt;-->
+      <!--&lt;!&ndash;</p>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="item tabs tabs-secondary tabs-icon-left">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a class="tab-item" href="#">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="icon ion-thumbsup"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;Like&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+      <!--&lt;!&ndash;<a class="tab-item" href="#">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="icon ion-chatbox"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;Comment&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+      <!--&lt;!&ndash;<a class="tab-item" href="#">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="icon ion-share"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;Share&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+  <!--</div>-->
+
+</ion-content>
+
+

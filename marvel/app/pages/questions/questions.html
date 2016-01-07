@@ -1,0 +1,28 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <icon menu></icon>
+  </button>
+  <ion-title>Questions</ion-title>
+</ion-navbar>
+
+<ion-toolbar>
+  <p class="header">Today</p>
+  <select class="dropdown-select">
+    <option>Date</option>
+  </select>
+</ion-toolbar>
+
+<ion-content>
+  <ion-overlay></ion-overlay>
+  <ion-list>
+    <ion-item *ngFor="#question of questions" (click)="viewQuestion(question)">
+      <div class="profile-details">
+        <h1>{{question.title}}</h1>
+        <p>{{question.details}}<p>
+      </div>
+    </ion-item>
+  </ion-list>
+  <button fab fab-bottom fab-right (click)="openContactModal()">
+    <icon add></icon>
+  </button>
+</ion-content>
