@@ -8,7 +8,7 @@ import {TeamDetailPage} from "../team-details/team-details";
 export class TeamPage {
   constructor(nav: NavController) {
     this.nav = nav;
-    this.pet = 'kittens';
+    this.team = 'list';
 
     this.questions = [
         {image: 'https://simplybeautysydney.files.wordpress.com/2013/01/brad-profile-square.jpg', owner: 'Marco', details: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam?' },
@@ -17,9 +17,6 @@ export class TeamPage {
         {image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWGn7WgIh0_snls-L4Tq30lzq-8gaf6h74G9z0Vw-JuGV1UbI-', owner: 'John', details: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam?' },
     ]
   }
-    kittens(pet) {
-        console.log(this.value);
-    }
 
     viewQuestion(question) {
         this.nav.push(TeamDetailPage, {
