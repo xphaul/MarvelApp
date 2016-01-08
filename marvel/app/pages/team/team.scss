@@ -1,9 +1,16 @@
-.getting-started {
-
-  p {
-    margin: 20px 0;
-    line-height: 22px;
-    font-size: 16px;
-  }
-
+.profile-picture {
+  width: 400px !important;
+}
+.team-picture {
+  width: 150px;
+  height: 150px;
+}
+.team-question-details {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 10px 0 0 20px;
+}
+.float-right {
+  float: right;
 }

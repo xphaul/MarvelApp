@@ -22,9 +22,9 @@
     <div padding *ngSwitchWhen="'grid'">
       <ion-row>
         <ion-col center *ngFor="#question of questions">
-            <img class="profile-picture" src="{{question.image}}" (click)="viewQuestion(question)">
-            <span>{{question.owner}}</span>
-            <icon class="float-right icon ion-ios-ionic-outline"></icon>
+          <img class="profile-picture" src="{{question.image}}" (click)="viewQuestion(question)">
+          <span>{{question.owner}}</span>
+          <icon class="float-right icon ion-ios-ionic-outline"></icon>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -45,24 +45,24 @@
         </ion-col>
         <ion-col center>
           <img class="profile-picture" src="http://wp.production.patheos.com/blogs/thepangeablog/files/2011/12/Kurt-Profile-Image-Square-Brick-1024x1024.jpg">
-          <span>Timothy</span>
+          <span>Franc</span>
           <icon class="float-right icon ion-ios-ionic-outline"></icon>
         </ion-col>
       </ion-row>
     </div>
 
     <div>
-    <ion-list *ngSwitchWhen="'list'">
-      <ion-item *ngFor="#question of questions" (click)="viewQuestion(question)">
-        <img src="{{question.image}}" class="team-picture">
-        <div class="team-question-details">
-          <h1>{{question.owner}}</h1>
-          <div>
-          <p>{{question.details}}</p>
+      <ion-list *ngSwitchWhen="'list'">
+        <ion-item *ngFor="#question of questions" (click)="viewQuestion(question)">
+          <img src="{{question.image}}" class="team-picture">
+          <div class="team-question-details">
+            <h1>{{question.owner}}</h1>
+            <div>
+              <p>{{question.details}}</p>
             </div>
-        </div>
-      </ion-item>
-    </ion-list>
+          </div>
+        </ion-item>
+      </ion-list>
     </div>
   </div>
 </ion-content>

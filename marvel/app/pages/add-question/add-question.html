@@ -7,7 +7,8 @@
     <ion-label>Question</ion-label>
     <textarea type="text" [(ngModel)]="details"></textarea>
   </ion-input>
-  <br>
-  <button secondary Outline class="float-right" (click)="saveQuestion()">Send</button>
-  <button danger Outline class="float-right" (click)="closeModal()">Back</button>
+  <div padding class="align-right">
+    <button secondary Outline class="float-right" (click)="saveQuestion()">Send</button>
+    <button danger Outline class="float-right" (click)="closeModal()">Back</button>
+  </div>
 </ion-content>
